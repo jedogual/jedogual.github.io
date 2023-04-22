@@ -1,34 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: layout
+---
 
-  <head>
-    <meta charset="utf-8">
-    <title>{{page.title}}</title>
-    <meta name="author" content="">
-    <meta name="description" content="">
-  </head>
+{{content}}
 
-  <body>
-
-    <header>
-      {% include header.html %}
-    </header>
-
-    <nav>
-      {% include nav.html %}
-    </nav>
-
-    <aside>
-      {% include aside.html %}
-    </aside>
-
-    <section>
-      {{content}}
-    </section>
-
-    <footer>
-      {% include footer.html %}
-    </footer>
 
 <ul>
   {% for post in site.posts %}
@@ -38,7 +13,3 @@
     </li>
   {% endfor %}
 </ul>
-
-  </body>
-
-</html>
