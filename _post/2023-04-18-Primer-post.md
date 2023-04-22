@@ -1,5 +1,6 @@
 ---
 layout: post
+author: javier
 title:  "Primer post"
 ---
 
