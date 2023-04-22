@@ -1,7 +1,13 @@
 ---
 layout: layout
 title: Página de blog
-permalink: /blog
+permalink: /blog/
 ---
 
-<p>Página de blog<p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
